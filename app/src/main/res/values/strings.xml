@@ -2,4 +2,7 @@
     <string name="app_name">comp3074assignment1</string>
     <string name="creator_name_and_id">Zac Shaw - 101074878</string>
     <string name="about_button">About</string>
+    <string name="calculate_button">Calculate</string>
+    <string name="hoursworked_box"># hours worked</string>
+    <string name="hourlyrate_box">$ per hour</string>
 </resources>
