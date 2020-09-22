@@ -5,4 +5,8 @@
     <string name="calculate_button">Calculate</string>
     <string name="hoursworked_box"># hours worked</string>
     <string name="hourlyrate_box">$ per hour</string>
+    <string name="pay_label">Payment</string>
+    <string name="overtime_label">From Overtime</string>
+    <string name="tax_label">Tax</string>
+    <string name="total_label">Total</string>
 </resources>
