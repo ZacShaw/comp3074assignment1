@@ -8,17 +8,6 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/aboutbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:onClick="about"
-        android:text="@string/about_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
         android:id="@+id/calculate_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,6 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editText1" />
 
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="379dp"
         android:layout_height="150dp"
         android:layout_marginStart="16dp"

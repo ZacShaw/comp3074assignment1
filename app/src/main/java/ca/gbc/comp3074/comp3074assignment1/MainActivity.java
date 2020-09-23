@@ -1,8 +1,12 @@
 package ca.gbc.comp3074.comp3074assignment1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -67,8 +71,22 @@ public class MainActivity extends AppCompatActivity {
         );
     }
 
-    public void about(View view) {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.about_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         Intent intent = new Intent(this, AboutActivity.class);
         startActivity(intent);
+        return super.onOptionsItemSelected(item);
     }
+    //old code for an about button
+    /*public void about(View view) {
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
+    }*/
 }
